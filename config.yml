@@ -1,0 +1,49 @@
+version: 1.0
+
+locale: ru
+
+#use default spawnpoint: true
+
+use fixed teleport location: false
+
+teleportation radius: 10
+
+teleport delay (tiks): 100
+
+sound effect:
+            before teleport:
+                    use: true
+                    type: ENTITY_SHULKER_TELEPORT 
+                    volume: 10
+                    pitch : 1
+            after teleport:
+                    use: true
+                    type: ENTITY_GHAST_SHOOT
+                    volume: 10
+                    pitch : 1
+particle effect:
+            before teleport:
+                    use: true
+                    type: FLAME
+                    count: 50
+                    offset: 0.5
+                    extra: 0
+            after teleport:
+                    use: true
+                    type: DRAGON_BREATH
+                    count: 50
+                    offset: 0.5
+                    extra: 0
+potion effect:
+            before teleport:
+                    use: true
+                    type: CONFUSION
+                    duration (tiks): 200
+                    amplifier: 255
+                    hide particle: true
+            after teleport:
+                    use: true
+                    type: SPEED
+                    duration (tiks): 10
+                    amplifier: 10
+                    hide particle: true

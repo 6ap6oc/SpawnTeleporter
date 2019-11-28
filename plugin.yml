@@ -1,0 +1,43 @@
+main: me.irubbick.spawnteleporter.SpawnTeleporter
+version: 0.1.14
+name: SpawnTeleporter
+author: iRubbick
+description: Coffee Dream SpawnTeleporter plugin
+
+permission:
+    ST.admin.notify:
+        description: SpawnTeleporter notify
+        default: op
+    ST.spawn.set:
+        description: SetSpawn command
+        default: op
+    ST.spawn.use:
+        description: Spawn command
+        default: true
+    ST.spawn.customspawn:
+        description: Spawn command
+        default: op
+    ST.spawn.reload:
+        description: ReloadSpawn command
+        default: op
+commands:
+    spawn:
+        description: /spawn command
+        permission: ST.spawn.use
+        default: true
+    spawnlist:
+        description: /spawnlist command
+        permission: ST.spawn.spawnlist
+        default: op
+    setspawn:
+        description: /spawnlist command
+        permission: ST.spawn.set
+        default: op
+    reloadspawn:
+        description: /reloadspawn command
+        permission: ST.spawn.reload
+        default: op
+    testspawn:
+        description: /test command
+        permission: ST.spawn.test
+        default: op
